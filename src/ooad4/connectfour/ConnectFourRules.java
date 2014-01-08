@@ -47,7 +47,7 @@ public class ConnectFourRules extends Rules
 		{
 			throw new InvalidMoveException("selected column doesn't exist");
 		}
-		if (board.getPieces(board.getRows(), column) != null)
+		if (board.getPieces(board.getRows()-1, column) != null)
 		{
 			throw new IllegalMoveExcetion("selected column is full");
 		}
@@ -56,7 +56,7 @@ public class ConnectFourRules extends Rules
 		//put new disc in the lowest possible empty place on the board.
 		for (int i = 0; i < boardRows; i++) 
 		{
-			if (board.getPieces(i, column) != null) 
+			if (board.getPieces(i, column) == null) 
 			{
 				Disc newPiece = new Disc(theMove.owner);
 				board.setPieces(i, column, newPiece);
@@ -128,7 +128,7 @@ public class ConnectFourRules extends Rules
 		int curRow = startRow;
 		int curCol = startCol;
 		
-		while((curCol < boardColumns && curCol >= 0) && (curRow < boardRows && curRow >= 0) && board.getPieces(curRow, curCol).owner == owner)
+		while((curCol < boardColumns && curCol >= 0) && (curRow < boardRows && curRow >= 0) && board.getPieces(curRow, curCol) != null && board.getPieces(curRow, curCol).owner == owner)
 		{
 			count++;
 			curRow += rowInc;
