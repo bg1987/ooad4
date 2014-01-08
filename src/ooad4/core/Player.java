@@ -37,8 +37,7 @@ public class Player
 	 */
 	
 	public Player(Strategy strategy) {
-		super();
-		// TODO : construct me	
+		this.strategy = strategy; 
 	}
 
 

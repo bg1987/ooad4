@@ -1,11 +1,13 @@
 package ooad4.core;
 
+import java.util.Observable;
+
 
 /**
  * Responsible for the game's loop.
  * Keeps track of the players, the board, whose turn it is, etc.
  */
-public class Game
+public class Game extends Observable
 {
 	/**
 	 * <!-- begin-user-doc -->
@@ -47,7 +49,7 @@ public class Game
 		this.player1 = p1;
 		this.player2 = p2;
 		this.rules = rules;
-		// TODO: maybe create board here
+		this.board = new Board(rules.boardRows, rules.boardColumns);
 	}
 	
 	/**
@@ -59,7 +61,7 @@ public class Game
 	public Player play() throws GameEndedUnexpectedlyException {
 		Player turn = null;
 		WinResult gameState = WinResult.None;
-		
+		notifyObservers();
 		//The game loop. Halts when the game has ended
 		while(gameState == WinResult.None)
 		{
@@ -81,6 +83,7 @@ public class Game
 			try {
 				rules.parseMove(nextMove, board);
 				moved = true;
+				notifyObservers();
 			} catch (InvalidMoveException | IllegalMoveExcetion e) {
 				//TODO: make game observable and notify about the exception.
 			}
