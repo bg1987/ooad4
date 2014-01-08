@@ -37,7 +37,8 @@ public class Game
 	 * @ordered
 	 */
 	
-	public Set<Player> player;
+	public Player player1;
+	public Player player2;
 	
 
 	/**
@@ -48,8 +49,10 @@ public class Game
 	 */
 	
 	public Game(Player p1, Player p2, Rules rules) {
-		super();
-		// TODO : construct me	
+		this.player1 = p1;
+		this.player2 = p2;
+		this.rules = rules;
+		// TODO: maybe create board here
 	}
 	
 	/**
@@ -62,7 +65,7 @@ public class Game
 	
 	public Player play() {
 		// TODO : to implement
-		return new Player();	
+		return player1;	
 	}
 	
 }

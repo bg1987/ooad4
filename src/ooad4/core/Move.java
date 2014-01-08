@@ -17,7 +17,7 @@ public abstract class Move
 	 * @ordered
 	 */
 	
-	public Player player;
+	public Player owner;
 	
 
 	/**
@@ -28,8 +28,7 @@ public abstract class Move
 	 */
 	
 	public Move(Player owner) {
-		super();
-		// TODO : construct me	
+		this.owner = owner;
 	}
 	
 }

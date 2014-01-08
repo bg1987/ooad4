@@ -15,6 +15,8 @@ import ooad4.core.Move;
 public abstract class ConnectFourStrategy implements Strategy
 {
 
+	protected ConnectFourStrategy instance;
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

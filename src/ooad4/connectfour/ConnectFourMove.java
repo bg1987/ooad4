@@ -30,8 +30,8 @@ public class ConnectFourMove extends Move
 	 */
 	
 	public ConnectFourMove(Player owner, int column) {
-		super();
-		// TODO : construct me	
+		super(owner);
+		this.column = column;
 	}
 	
 }

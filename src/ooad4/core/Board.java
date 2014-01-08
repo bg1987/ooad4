@@ -48,8 +48,8 @@ public class Board
 	 */
 	
 	public Board(int rows, int columns) {
-		super();
-		// TODO : construct me	
+		this.rows = rows;
+		this.columns = columns;
 	}
 	
 }

@@ -21,8 +21,7 @@ public class Disc extends Piece
 	 */
 	
 	public Disc(int row, int column, Player owner) {
-		super();
-		// TODO : construct me	
+		super(row, column, owner);
 	}
 	
 }

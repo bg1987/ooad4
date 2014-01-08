@@ -46,8 +46,9 @@ public abstract class Piece
 	 */
 	
 	public Piece(int row, int column, Player owner) {
-		super();
-		// TODO : construct me	
+		this.row = row;
+		this.column = column;
+		this.owner = owner;
 	}
 	
 }
