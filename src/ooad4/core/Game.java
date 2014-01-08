@@ -1,6 +1,4 @@
 package ooad4.core;
-import java.util.Set;
-import java.util.HashSet;
 
 
 /**
@@ -84,7 +82,7 @@ public class Game
 				rules.parseMove(nextMove, board);
 				moved = true;
 			} catch (InvalidMoveException | IllegalMoveExcetion e) {
-				//TODO: make game observalble and notify about the exception.
+				//TODO: make game observable and notify about the exception.
 			}
 
 			} while (!moved);

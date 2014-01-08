@@ -1,8 +1,5 @@
 package ooad4.connectfour;
 import ooad4.core.Strategy;
-import ooad4.core.Player;
-import ooad4.core.Board;
-import ooad4.core.Move;
 
 
 /**
