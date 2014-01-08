@@ -76,8 +76,18 @@ public class Game
 			}
 			
 			//Ask player for the next move, and update the board
+			boolean moved = false;	
+			do {
+			moved = false;
 			Move nextMove = turn.getMove(this.board);
-			rules.parseMove(nextMove, board);
+			try {
+				rules.parseMove(nextMove, board);
+				moved = true;
+			} catch (InvalidMoveException | IllegalMoveExcetion e) {
+				//TODO: make game observalble and notify about the exception.
+			}
+
+			} while (!moved);
 			
 			//Check whether the game has ended
 			gameState = rules.checkWin(board);

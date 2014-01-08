@@ -43,14 +43,14 @@ public class HumanStrategy extends ConnectFourStrategy
 			throw new IllegalArgumentException("board or player are null");
 		}
 		Scanner in = new Scanner (System.in);
-		System.out.println ("What is your next move? [0-"+(board.columns-1)+"]");
+		System.out.println ("What is your next move? [0-"+(board.getColumns()-1)+"]");
 		int a = -1;
 		while (!in.hasNextInt() && a != -1)
 		{
 			if (in.hasNextInt())
 			{
 				a = in.nextInt();
-				if (a >= board.columns )
+				if (a >= board.getColumns() )
 				{
 					System.out.println("Sorry, wrong column");
 					continue;
@@ -61,6 +61,7 @@ public class HumanStrategy extends ConnectFourStrategy
 				System.out.println("Sorry, couldn't understand you!");
 			}
 		}
+		
 
 		return new ConnectFourMove(player, a);
 	}

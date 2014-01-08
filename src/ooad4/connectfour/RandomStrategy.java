@@ -44,7 +44,7 @@ public class RandomStrategy extends ConnectFourStrategy
 			throw new IllegalArgumentException("board or player are null");
 		}
 		Random rnd = new Random();
-		return new ConnectFourMove(player, rnd.nextInt(board.columns));
+		return new ConnectFourMove(player, rnd.nextInt(board.getColumns()));
 	}
 
 }

@@ -19,7 +19,7 @@ public class Board
 	 * @ordered
 	 */
 	
-	public int rows;
+	private int rows;
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -28,16 +28,18 @@ public class Board
 	 * @ordered
 	 */
 	
-	public int columns;
+	private int columns;
 	
+
 	/**
 	 * <!-- begin-user-doc -->
+	 * 2d array of the pieces on the board, where 0,0 represents the bottom left corner.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
-	public Set<Piece> piece;
+	private Piece pieces[][];
 	
 
 	/**
@@ -48,8 +50,38 @@ public class Board
 	 */
 	
 	public Board(int rows, int columns) {
+		this.setRows(rows);
+		this.setColumns(columns);
+	}
+
+
+	public int getRows() {
+		return rows;
+	}
+
+
+	public void setRows(int rows) {
 		this.rows = rows;
+	}
+
+
+	public int getColumns() {
+		return columns;
+	}
+
+
+	public void setColumns(int columns) {
 		this.columns = columns;
+	}
+
+
+	public Piece getPieces(int row,int col) {
+		return pieces[row][col];
+	}
+
+
+	public void setPieces(int row, int col, Piece newPiece) {
+		this.pieces[row][col] = newPiece;
 	}
 	
 }

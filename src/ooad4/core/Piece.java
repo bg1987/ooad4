@@ -10,23 +10,6 @@ package ooad4.core;
 
 public abstract class Piece
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public int row;
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public int column;
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,9 +28,8 @@ public abstract class Piece
 	 * @ordered
 	 */
 	
-	public Piece(int row, int column, Player owner) {
-		this.row = row;
-		this.column = column;
+	public Piece(Player owner) {
+
 		this.owner = owner;
 	}
 	
