@@ -1,5 +1,11 @@
 package ooad4.connectfour;
 
+import java.util.Random;
+
+import ooad4.core.Board;
+import ooad4.core.Move;
+import ooad4.core.Player;
+
 
 /**
  * A ConnectFour strategy that randomly selects a valid column to drop a disc into.
@@ -10,13 +16,35 @@ package ooad4.connectfour;
 
 public class RandomStrategy extends ConnectFourStrategy
 {
+	private static RandomStrategy instance;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
-	public RandomStrategy(){
+	private RandomStrategy(){
 		super();
+	}
+	
+	public static RandomStrategy getInstance()
+	{
+		if (instance == null)
+		{
+			instance = new RandomStrategy();
+		}
+		return instance;
+	}
+	
+	@Override
+	public Move nextMove(Board board, Player player) 
+	
+	{
+		if (board == null || player == null)
+		{
+			throw new IllegalArgumentException("board or player are null");
+		}
+		Random rnd = new Random();
+		return new ConnectFourMove(player, rnd.nextInt(board.columns));
 	}
 
 }
