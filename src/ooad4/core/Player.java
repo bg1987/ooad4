@@ -40,6 +40,11 @@ public class Player
 		super();
 		// TODO : construct me	
 	}
+
+
+	public Move getMove(Board board) {
+		return strategy.nextMove(board, this);
+	}
 	
 }
 
