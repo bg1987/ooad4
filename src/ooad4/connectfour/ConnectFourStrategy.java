@@ -15,7 +15,6 @@ import ooad4.core.Move;
 public abstract class ConnectFourStrategy implements Strategy
 {
 
-	protected ConnectFourStrategy instance;
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -24,19 +23,7 @@ public abstract class ConnectFourStrategy implements Strategy
 	 * @ordered
 	 */
 	
-	public static ConnectFourStrategy GetInstance() {
-		// TODO : to implement
-		return null;	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	private ConnectFourStrategy() {
+	public ConnectFourStrategy() {
 		super();
 		// TODO : construct me	
 	}
