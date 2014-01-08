@@ -1,6 +1,6 @@
 package ooad4.connectfour;
 
-import java.util.Scanner;
+import java.io.*;
 
 import ooad4.core.Board;
 import ooad4.core.Move;
@@ -42,29 +42,33 @@ public class HumanStrategy extends ConnectFourStrategy
 		{
 			throw new IllegalArgumentException("board or player are null");
 		}
-		Scanner in = new Scanner (System.in);
+
 		System.out.println ("What is your next move? [0-"+(board.getColumns()-1)+"]");
-		int a = -1;
-		while (!in.hasNextInt() && a != -1)
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+		int column = -1;
+		while (column == -1)
 		{
-			if (in.hasNextInt())
+			try 
 			{
-				a = in.nextInt();
-				if (a >= board.getColumns() )
+
+				int input = Integer.parseInt(br.readLine());
+				if (input < 0 || input >= board.getColumns())
 				{
-					System.out.println("Sorry, wrong column");
-					continue;
+					System.out.println("Sorry, that is not on the board");
+				}
+				else
+				{
+					column = input;
+					br.close();
 				}
 			}
-			else
+			catch (IOException e){}
+			catch (Exception e)
 			{
-				System.out.println("Sorry, couldn't understand you!");
+				System.out.println("Sorry, I didn't understand you. Please try again.");
 			}
 		}
-		
-
-		return new ConnectFourMove(player, a);
+		return new ConnectFourMove(player, column);
 	}
 
 }
-
