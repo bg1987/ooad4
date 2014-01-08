@@ -3,7 +3,7 @@
  */
 package ooad4.consolegui;
 
-import java.util.Dictionary;
+
 import java.util.HashMap;
 import java.util.Observable;
 import java.util.Observer;
@@ -31,7 +31,9 @@ public class gameObserver implements Observer {
 		
 		for (int i = 0; i < board.getRows(); i++) {
 			for (int j = 0; j < board.getColumns(); j++) {
-				System.out.print(guiObjects.get(board.getPieces(i, j).owner));
+				char c = board.getPieces(i, j) == null ? '_' : guiObjects.get(board.getPieces(i, j).owner);
+				System.out.print(c);
+				System.out.print(' ');
 			}
 			System.out.println();
 		}

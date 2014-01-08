@@ -61,6 +61,7 @@ public class Game extends Observable
 	public Player play() throws GameEndedUnexpectedlyException {
 		Player turn = null;
 		WinResult gameState = WinResult.None;
+		setChanged();
 		notifyObservers();
 		//The game loop. Halts when the game has ended
 		while(gameState == WinResult.None)
@@ -83,6 +84,7 @@ public class Game extends Observable
 			try {
 				rules.parseMove(nextMove, board);
 				moved = true;
+				setChanged();
 				notifyObservers();
 			} catch (InvalidMoveException | IllegalMoveExcetion e) {
 				//TODO: make game observable and notify about the exception.

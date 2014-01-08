@@ -50,6 +50,7 @@ public class Board
 	public Board(int rows, int columns) {
 		this.setRows(rows);
 		this.setColumns(columns);
+		pieces = new Piece[rows][columns];
 	}
 
 
