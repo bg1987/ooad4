@@ -35,10 +35,7 @@ public abstract class ConnectFourStrategy implements Strategy
 	 * @ordered
 	 */
 	
-	public Move nextMove(Board board, Player player) {
-		// TODO : to implement
-		return null;	
-	}
+
 	
 }
 
