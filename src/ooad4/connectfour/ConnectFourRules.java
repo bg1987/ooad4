@@ -81,7 +81,7 @@ public class ConnectFourRules extends Rules
 		discCount += countConsecutiveDiscs(board, owner, lastRow, lastCol, 0, -1);
 			//east
 		discCount += countConsecutiveDiscs(board, owner, lastRow, lastCol, 0, 1);
-		if (discCount >= 4)
+		if (discCount > 4)
 		{
 			return WinResult.Won;
 		}
@@ -94,7 +94,7 @@ public class ConnectFourRules extends Rules
 		discCount += countConsecutiveDiscs(board, owner, lastRow, lastCol, 1, 0);
 			//south
 		discCount += countConsecutiveDiscs(board, owner, lastRow, lastCol, -1, 0);
-		if (discCount >= 4)
+		if (discCount > 4)
 		{
 			return WinResult.Won;
 		}
@@ -108,7 +108,7 @@ public class ConnectFourRules extends Rules
 		discCount += countConsecutiveDiscs(board, owner, lastRow, lastCol, -1, -1);
 			//east
 		discCount += countConsecutiveDiscs(board, owner, lastRow, lastCol, 1, 1);
-		if (discCount >= 4)
+		if (discCount > 4)
 		{
 			return WinResult.Won;
 		}

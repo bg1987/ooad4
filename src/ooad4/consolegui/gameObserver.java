@@ -29,14 +29,15 @@ public class gameObserver implements Observer {
 	public void update(Observable o, Object arg) {
 		Board board = ((Game)o).board;
 		
-		for (int i = 0; i < board.getRows(); i++) {
-			for (int j = 0; j < board.getColumns(); j++) {
+		for (int i = board.getRows()-1; i >= 0; i--) {
+			for (int j = board.getColumns()-1; j >= 0; j--) {
 				char c = board.getPieces(i, j) == null ? '_' : guiObjects.get(board.getPieces(i, j).owner);
 				System.out.print(c);
 				System.out.print(' ');
 			}
 			System.out.println();
 		}
+		System.out.println();
 	}
 	
 }

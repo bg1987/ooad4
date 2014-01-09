@@ -59,10 +59,8 @@ public class HumanStrategy extends ConnectFourStrategy
 				else
 				{
 					column = input;
-					br.close();
 				}
 			}
-			catch (IOException e){}
 			catch (Exception e)
 			{
 				System.out.println("Sorry, I didn't understand you. Please try again.");
