@@ -12,6 +12,11 @@ public class StrategyMock implements Strategy {
 		this.move = move;
 	}
 	
+	public StrategyMock()
+	{
+		this.move = 0;
+	}
+	
 	@Override
 	public Move nextMove(Board board, Player player) {
 		
