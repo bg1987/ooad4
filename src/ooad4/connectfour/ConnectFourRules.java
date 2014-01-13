@@ -28,6 +28,11 @@ public class ConnectFourRules extends Rules
 		super(rows,cols);
 	}
 	
+	public ConnectFourRules()
+	{
+		super(7,6);
+	}
+	
 
 	@Override
 	public void parseMove(Move theMove, Board board) throws InvalidMoveException, IllegalMoveExcetion {

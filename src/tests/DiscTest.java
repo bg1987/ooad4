@@ -16,10 +16,20 @@ public class DiscTest {
 		disc = new Disc(null);
 	}
 
+	@Test
 	public void testDisc_Basic()
 	{
 		Player owner = new PlayerMock();
 		disc = new Disc(owner);
 		assertNotNull("Disc created successfully", disc);
 	}
+	
+	@Test
+	public void testDisc_VerifyOwner()
+	{
+		Player owner = new PlayerMock();
+		disc = new Disc(owner);
+		assertNotNull("Disc created successfully", disc.owner);
+	}
+
 }

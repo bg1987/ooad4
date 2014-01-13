@@ -28,6 +28,10 @@ public abstract class Move
 	 */
 	
 	public Move(Player owner) {
+		if (owner == null)
+		{
+			throw new IllegalArgumentException("Move cannot get a null owner");
+		}
 		this.owner = owner;
 	}
 	

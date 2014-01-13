@@ -10,42 +10,31 @@ import java.util.Observable;
 public class Game extends Observable
 {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * The rules of the game.
+	 * Determine the legality of moves and the winning conditions.
 	 */
-	
 	public Rules rules;
 	
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * The board.
 	 */
-	
 	public Board board;
 	
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * The two players.
 	 */
-	
 	public Player player1;
 	public Player player2;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * Creates a game with two players and a set of rules.
 	 */
-	
 	public Game(Player p1, Player p2, Rules rules) {
+		if (p1 == null || p2 == null || rules == null)
+		{
+			throw new IllegalArgumentException("Players and rules cannot be null");
+		}
 		this.player1 = p1;
 		this.player2 = p2;
 		this.rules = rules;
@@ -57,12 +46,14 @@ public class Game extends Observable
 	 * @returns the winning player, or null if there was a tie
 	 * @throws GameEndedUnexpectedlyException 
 	 */
-	
 	public Player play() throws GameEndedUnexpectedlyException {
 		Player turn = null;
 		WinResult gameState = WinResult.None;
+		
+		//Notify observers at the beginning of the game
 		setChanged();
 		notifyObservers();
+		
 		//The game loop. Halts when the game has ended
 		while(gameState == WinResult.None)
 		{
@@ -77,20 +68,27 @@ public class Game extends Observable
 			}
 			
 			//Ask player for the next move, and update the board
-			boolean moved = false;	
-			do {
-			moved = false;
-			Move nextMove = turn.getMove(this.board);
-			try {
-				rules.parseMove(nextMove, board);
-				moved = true;
-				setChanged();
-				notifyObservers();
-			} catch (InvalidMoveException | IllegalMoveExcetion e) {
-				//TODO: make game observable and notify about the exception.
+			//If an invalid move is sent, ask for another move from the player.
+			int moveTries = 0;	
+			boolean moved = false;
+			while(moveTries<10 && !moved) {
+				Move nextMove = turn.getMove(this.board);
+				try {
+					rules.parseMove(nextMove, board);
+					moved = true;
+					setChanged();
+					notifyObservers();
+				} catch (InvalidMoveException | IllegalMoveExcetion e) {
+					moveTries++;
+					//TODO: make game observable and notify about the exception.
+				}
 			}
-
-			} while (!moved);
+			//If after 10 tries, the player has not provided a legal move, stop the game.
+			//This will make the game throw a gameEndedUnexpectedlyException.
+			if (moveTries >= 10)
+			{
+				break;
+			}
 			
 			//Check whether the game has ended
 			gameState = rules.checkWin(board);

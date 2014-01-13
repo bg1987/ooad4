@@ -3,32 +3,24 @@ package ooad4.core;
 
 /**
  * An abstract class that represents a single piece on the game board.
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
  */
-
 public abstract class Piece
 {
 	
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * The player who owns this piece.
 	 */
-	
 	public Player owner;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * Create a new piece, given the player to which this piece belongs.
 	 */
-	
 	public Piece(Player owner) {
+		if (owner == null)
+		{
+			throw new IllegalArgumentException("Owner cannot be null");
+		}
 
 		this.owner = owner;
 	}

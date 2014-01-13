@@ -7,7 +7,7 @@ import ooad4.core.Player;
 import ooad4.core.Strategy;
 
 public class StrategyMock implements Strategy {
-	private int move;
+	protected int move;
 	public StrategyMock(int move) {
 		this.move = move;
 	}
