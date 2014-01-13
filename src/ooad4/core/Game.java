@@ -78,7 +78,8 @@ public class Game extends Observable
 					moved = true;
 					setChanged();
 					notifyObservers();
-				} catch (InvalidMoveException | IllegalMoveExcetion e) {
+				} catch (InvalidMoveException e) 
+				{
 					moveTries++;
 					//TODO: make game observable and notify about the exception.
 				}

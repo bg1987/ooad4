@@ -37,13 +37,12 @@ public abstract class Rules
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
-	 * @throws InvalidMoveException 
 	 * @throws IllegalMoveExcetion 
 	 * @generated
 	 * @ordered
 	 */
 	
-	public abstract void parseMove(Move theMove, Board board) throws InvalidMoveException, IllegalMoveExcetion;
+	public abstract void parseMove(Move theMove, Board board) throws InvalidMoveException;
 	
 	/**
 	 * <!-- begin-user-doc -->

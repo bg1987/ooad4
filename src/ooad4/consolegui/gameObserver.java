@@ -30,7 +30,7 @@ public class gameObserver implements Observer {
 		Board board = ((Game)o).board;
 		
 		for (int i = board.getRows()-1; i >= 0; i--) {
-			for (int j = board.getColumns()-1; j >= 0; j--) {
+			for (int j = 0; j < board.getColumns(); j ++) {
 				char c = board.getPieces(i, j) == null ? '_' : guiObjects.get(board.getPieces(i, j).owner);
 				System.out.print(c);
 				System.out.print(' ');

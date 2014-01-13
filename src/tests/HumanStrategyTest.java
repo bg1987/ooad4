@@ -9,7 +9,6 @@ import java.io.PrintStream;
 import ooad4.connectfour.HumanStrategy;
 import ooad4.core.Board;
 import ooad4.core.Player;
-import ooad4.core.Strategy;
 
 import org.junit.After;
 import org.junit.AfterClass;

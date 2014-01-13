@@ -66,7 +66,7 @@ public class GameTest {
 		Player player2 = new PlayerMock(1);
 		
 		game = new Game(player1, player2, new ConnectFourRules());
-		Player winner = game.play();
+		game.play();
 	}
 	
 	//This strategy will send one illegal move, and then send a good one when prompted again.
