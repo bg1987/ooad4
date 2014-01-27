@@ -2,6 +2,7 @@ package ooad4.connectfour;
 import ooad4.core.Board;
 import ooad4.core.InvalidMoveException;
 import ooad4.core.Move;
+import ooad4.core.Piece;
 import ooad4.core.Player;
 import ooad4.core.Rules;
 import ooad4.core.WinResult;
@@ -13,8 +14,7 @@ import ooad4.core.WinResult;
 public class ConnectFourRules extends Rules
 {
 	//Remember the last move parsed by parseMove in order to use in checkWin
-	private int lastRow = -1;
-	private int lastCol = -1;
+	private Piece lastPiece = null;
 	
 	private static final int defaultColumns = 7;
 	private static final int defaultRows = 6;
@@ -37,23 +37,30 @@ public class ConnectFourRules extends Rules
 	
 
 	@Override
-	public void parseMove(Move theMove, Board board) throws InvalidMoveException {
+	public Piece parseMove(Move theMove, Board board){
 
 		//Make sure that input is valid, and extract the valid column number from the given move.
-		int column = validateInput(theMove, board);
+		if (!validateInput(theMove, board))
+		{
+			lastPiece = null;
+			return null;
+		}
+		
+		int column = ((ConnectFourMove)theMove).column;
 		
 		//put new disc in the lowest possible empty place on the board.
 		for (int i = 0; i < boardRows; i++) 
 		{
 			if (board.getPieces(i, column) == null) 
 			{
-				Disc newPiece = new Disc(theMove.owner);
+				Disc newPiece = new Disc(theMove.owner, i, column);
 				board.setPieces(i, column, newPiece);
-				lastRow = i;
-				lastCol = column;
+				lastPiece = newPiece;
 				break;
 			}
 		}
+		
+		return lastPiece;
 
 	}
 	
@@ -63,9 +70,8 @@ public class ConnectFourRules extends Rules
 	 * @param theMove
 	 * @param board
 	 * @return The column number of the move, if it is valid
-	 * @throws InvalidMoveException
 	 */
-	private int validateInput(Move theMove, Board board) throws InvalidMoveException
+	private boolean validateInput(Move theMove, Board board)
 	{
 		if (theMove == null || board == null) {
 			throw new IllegalArgumentException("Move or Board were null");
@@ -82,14 +88,14 @@ public class ConnectFourRules extends Rules
 		int column = ((ConnectFourMove)theMove).column;
 		if ((column > board.getColumns()-1) || (column < 0))
 		{
-			throw new InvalidMoveException("selected column doesn't exist");
+			return false;
 		}
 		if (board.getPieces(board.getRows()-1, column) != null)
 		{
-			throw new InvalidMoveException("selected column is full");
+			return false;
 		}
 		
-		return column;
+		return true;
 	}
 
 	@Override
@@ -98,7 +104,14 @@ public class ConnectFourRules extends Rules
 			throw new IllegalArgumentException("Board is null");
 		}
 		
-		Player owner = board.getPieces(lastRow, lastCol).owner; //TODO: does this break LSP? the 2 dots things.
+		if (lastPiece == null)
+		{
+			throw new IllegalArgumentException("checkWin must be called after a legal move has been made.");
+		}
+		
+		int lastRow = lastPiece.getRow();
+		int lastCol = lastPiece.getColumn();
+		Player owner = lastPiece.getOwner();
 		
 		//check for horizontal win
 		int discCount = 0;
@@ -182,7 +195,7 @@ public class ConnectFourRules extends Rules
 		return (column<boardColumns && column >= 0 &&
 				row < boardRows && row >= 0 &&
 				board.getPieces(row, column) != null &&
-				board.getPieces(row, column).owner == owner);
+				board.getPieces(row, column).getOwner() == owner);
 	}
 
 	/**

@@ -35,14 +35,11 @@ public abstract class Rules
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @throws IllegalMoveExcetion 
-	 * @generated
-	 * @ordered
+	 * Parse the given move and make changes to the board if the move is valid.
+	 * @return The piece that was moved, or null if move was invalid.
 	 */
 	
-	public abstract void parseMove(Move theMove, Board board) throws InvalidMoveException;
+	public abstract Piece parseMove(Move theMove, Board board);
 	
 	/**
 	 * <!-- begin-user-doc -->

@@ -70,18 +70,19 @@ public class Game extends Observable
 			//Ask player for the next move, and update the board
 			//If an invalid move is sent, ask for another move from the player.
 			int moveTries = 0;	
-			boolean moved = false;
-			while(moveTries<10 && !moved) {
+			Piece newestPiece = null;
+			while(moveTries<10 && newestPiece == null) {
 				Move nextMove = turn.getMove(this.board);
-				try {
-					rules.parseMove(nextMove, board);
-					moved = true;
-					setChanged();
-					notifyObservers();
-				} catch (InvalidMoveException e) 
+				newestPiece = rules.parseMove(nextMove, board);
+				if (newestPiece == null)
 				{
 					moveTries++;
 					//TODO: make game observable and notify about the exception.
+				}
+				else
+				{
+					setChanged();
+					notifyObservers();
 				}
 			}
 			//If after 10 tries, the player has not provided a legal move, stop the game.

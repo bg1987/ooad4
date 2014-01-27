@@ -20,8 +20,8 @@ public class Disc extends Piece
 	 * @ordered
 	 */
 	
-	public Disc(Player owner) {
-		super(owner);
+	public Disc(Player owner, int row, int column) {
+		super(owner, row, column);
 	}
 	
 }
