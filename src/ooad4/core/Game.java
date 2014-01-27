@@ -51,8 +51,8 @@ public class Game extends Observable
 		WinResult gameState = WinResult.None;
 		
 		//Notify observers at the beginning of the game
-		setChanged();
-		notifyObservers();
+//		setChanged();
+//		notifyObservers();
 		
 		//The game loop. Halts when the game has ended
 		while(gameState == WinResult.None)
@@ -82,7 +82,7 @@ public class Game extends Observable
 				else
 				{
 					setChanged();
-					notifyObservers();
+					notifyObservers(newestPiece);
 				}
 			}
 			//If after 10 tries, the player has not provided a legal move, stop the game.
