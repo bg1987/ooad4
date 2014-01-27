@@ -45,28 +45,42 @@ public class HumanStrategy extends ConnectFourStrategy
 
 		System.out.println ("What is your next move? [0-"+(board.getColumns()-1)+"]");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
-		int column = -1;
-		while (column == -1)
+		int column =-1;
+		String input = "";
+		do
 		{
-			try 
-			{
-
-				int input = Integer.parseInt(br.readLine());
-				if (input < 0 || input >= board.getColumns())
-				{
-					System.out.println("Sorry, that is not on the board");
-				}
-				else
-				{
-					column = input;
-				}
+			try{
+				 input = br.readLine();
 			}
-			catch (Exception e)
+			catch (IOException e) {
+				System.out.println("System Error.");
+			}
+			
+		}while (!validateInput(input,board));
+		
+		return new ConnectFourMove(player, Integer.parseInt(input));
+	}
+	
+	private boolean validateInput(String inMsg, Board board){
+		try 
+		{
+			
+			int input = Integer.parseInt(inMsg);
+			if (input < 0 || input >= board.getColumns())
 			{
-				System.out.println("Sorry, I didn't understand you. Please try again.");
+				System.out.println("Sorry, that is not on the board");
+				return false;
+			}
+			else
+			{
+				return true;
 			}
 		}
-		return new ConnectFourMove(player, column);
+		catch (Exception e)
+		{
+			System.out.println("Sorry, I didn't understand you. Please try again.");
+			return false;
+		}
 	}
 
 }
