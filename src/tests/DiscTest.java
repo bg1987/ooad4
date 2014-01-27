@@ -13,14 +13,14 @@ public class DiscTest {
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void testDisc_NullOwner() {
-		disc = new Disc(null);
+		disc = new Disc(null, 0, 0);
 	}
 
 	@Test
 	public void testDisc_Basic()
 	{
 		Player owner = new PlayerMock();
-		disc = new Disc(owner);
+		disc = new Disc(owner, 0, 0);
 		assertNotNull("Disc created successfully", disc);
 	}
 	
@@ -28,8 +28,8 @@ public class DiscTest {
 	public void testDisc_VerifyOwner()
 	{
 		Player owner = new PlayerMock();
-		disc = new Disc(owner);
-		assertNotNull("Disc created successfully", disc.owner);
+		disc = new Disc(owner, 0, 0);
+		assertNotNull("Disc created successfully", disc.getOwner());
 	}
 
 }
