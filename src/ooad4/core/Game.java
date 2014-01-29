@@ -38,7 +38,7 @@ public class Game extends Observable
 		this.player1 = p1;
 		this.player2 = p2;
 		this.rules = rules;
-		this.board = new Board(rules.boardRows, rules.boardColumns);
+		this.board = new Board(rules.getBoardRows(), rules.getBoardColumns());
 	}
 	
 	/**
