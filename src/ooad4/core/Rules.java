@@ -8,15 +8,23 @@ package ooad4.core;
  * @generated
  */
 
-public abstract class Rules
+public abstract class Rules implements IRules
 {
 	protected int boardRows;
 	protected int boardColumns;
 	 
+	/* (non-Javadoc)
+	 * @see ooad4.core.IRules#getBoardRows()
+	 */
+	@Override
 	public int getBoardRows() {
 		return boardRows;
 	}
 	
+	/* (non-Javadoc)
+	 * @see ooad4.core.IRules#getBoardColumns()
+	 */
+	@Override
 	public int getBoardColumns() {
 		return boardColumns;
 	}
@@ -34,20 +42,18 @@ public abstract class Rules
 		this.boardRows = boardRows;
 	}
 
-	/**
-	 * Parse the given move and make changes to the board if the move is valid.
-	 * @return The piece that was moved, or null if move was invalid.
+	/* (non-Javadoc)
+	 * @see ooad4.core.IRules#parseMove(ooad4.core.Move, ooad4.core.Board)
 	 */
 	
+	@Override
 	public abstract Piece parseMove(Move theMove, Board board);
 	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	/* (non-Javadoc)
+	 * @see ooad4.core.IRules#checkWin(ooad4.core.Board)
 	 */
 	
+	@Override
 	public abstract WinResult checkWin(Board board);
 
 

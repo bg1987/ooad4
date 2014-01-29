@@ -13,7 +13,7 @@ public class Game extends Observable
 	 * The rules of the game.
 	 * Determine the legality of moves and the winning conditions.
 	 */
-	public Rules rules;
+	public IRules rules;
 	
 	/**
 	 * The board.
@@ -30,7 +30,7 @@ public class Game extends Observable
 	/**
 	 * Creates a game with two players and a set of rules.
 	 */
-	public Game(Player p1, Player p2, Rules rules) {
+	public Game(Player p1, Player p2, IRules rules) {
 		if (p1 == null || p2 == null || rules == null)
 		{
 			throw new IllegalArgumentException("Players and rules cannot be null");
