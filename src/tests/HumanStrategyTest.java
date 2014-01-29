@@ -6,7 +6,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import ooad4.connectfour.HumanStrategy;
+import ooad4.consolegui.HumanStrategy;
 import ooad4.core.Board;
 import ooad4.core.Player;
 

@@ -1,7 +1,9 @@
-package ooad4.connectfour;
+package ooad4.consolegui;
 
 import java.util.Random;
 
+import ooad4.connectfour.ConnectFourMove;
+import ooad4.connectfour.ConnectFourStrategy;
 import ooad4.core.Board;
 import ooad4.core.Move;
 import ooad4.core.Player;

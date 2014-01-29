@@ -37,7 +37,7 @@ public class Board
 	 * @ordered
 	 */
 	
-	private Piece pieces[][];
+	protected Piece pieces[][];
 	
 
 	/**

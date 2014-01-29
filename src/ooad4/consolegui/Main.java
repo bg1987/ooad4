@@ -1,8 +1,6 @@
 package ooad4.consolegui;
 
 import ooad4.connectfour.ConnectFourRules;
-import ooad4.connectfour.HumanStrategy;
-import ooad4.connectfour.RandomStrategy;
 import ooad4.core.Game;
 import ooad4.core.GameEndedUnexpectedlyException;
 import ooad4.core.IRules;
