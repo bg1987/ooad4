@@ -1,4 +1,4 @@
-package ooad4.aspects;
+package ooad4.logging;
 
 import java.io.PrintStream;
 import java.util.Date;
@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
 
 import ooad4.core.Board;
 //import ooad4.core.Move;
-import ooad4.core.LogFiles;
 import ooad4.core.Piece;
 import ooad4.core.Player;
 import ooad4.core.WinResult;
@@ -22,9 +21,15 @@ public aspect LoggingAspect {
 	private static Player p1;
 	private static Player p2;
 	private static String lastPlayer;
-	pointcut nextMove() : call(* ooad4.core.Strategy.nextMove(..)) && !within(tests..*);
 	
-	before() : call (ooad4.core.Game.new(ooad4.core.Player,ooad4.core.Player,ooad4.core.IRules)) && !within(tests..*){
+	
+	pointcut nextMove() : call(* ooad4.core.Strategy.nextMove(..)) && !within(tests..*);
+	pointcut newGame() : call (ooad4.core.Game.new(ooad4.core.Player,ooad4.core.Player,ooad4.core.IRules)) && !within(tests..*);
+	pointcut validateInput() :  call(boolean ooad4.connectfour.ConnectFourRules.validateInput(..)) || call(boolean ooad4.consolegui.HumanStrategy.validateInput(..)) && !within(tests..*);
+	pointcut parseMove() : call(* ooad4.core.IRules.parseMove(* , *)) && !within(tests..*);
+	pointcut checkWin() : call(WinResult ooad4.core.IRules.checkWin(..)) && !within(tests..*);
+	
+	before() : newGame(){
 		Object[] args = thisJoinPoint.getArgs();
 		p1 = (ooad4.core.Player)args[0];
 		p2 = (ooad4.core.Player)args[1];
@@ -49,19 +54,19 @@ public aspect LoggingAspect {
 		log("after "+timeTook/1000+" seconds, "+player+" puts a disc in column: "+move.column);
 	}
 	
-	after() returning(boolean isValid): call(boolean ooad4.connectfour.ConnectFourRules.validateInput(..)) || call(boolean ooad4.connectfour.HumanStrategy.validateInput(..)){
+	after() returning(boolean isValid): validateInput(){
 		if (!isValid) {
 			log("invalid move");
 		}
 	}
 	
-	after() : call(* ooad4.core.IRules.parseMove(* , *)){
+	after() : parseMove(){
 		Object[] args = thisJoinPoint.getArgs();
 		Board board = (Board)args[1];
 		logBoard(board);
 	}
 	
-	after() returning(WinResult res) : call(WinResult ooad4.core.IRules.checkWin(..)){
+	after() returning(WinResult res) : checkWin(){
 		switch (res) {
 		case Won:
 			log("Game has ended! "+lastPlayer+" has won!");

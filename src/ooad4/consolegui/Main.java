@@ -5,7 +5,7 @@ import ooad4.core.Game;
 import ooad4.core.GameEndedUnexpectedlyException;
 import ooad4.core.IRules;
 import ooad4.core.Player;
-import ooad4.core.ProxyLogger;
+import ooad4.logging.ProxyLogger;
 
 public class Main {
 

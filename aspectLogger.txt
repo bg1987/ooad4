@@ -1,0 +1,547 @@
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:Game has ended! unkown has won!
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:Game has ended! unkown has won!
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:27:32] AspectLogger:Board status:
+|?|
+---
+[30/01/2014 01:27:32] AspectLogger:Game has ended in a tie
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| |?| | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:invalid move
+[30/01/2014 01:27:32] AspectLogger:Board status:
+|?|
+---
+[30/01/2014 01:27:32] AspectLogger:Board status:
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+-----------
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?|?|?|?| | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:Game has ended! unkown has won!
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+|?| | | | | | |
+|?| | | | | | |
+|?| | | | | | |
+|?| | | | | | |
+|?| | | | | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:Game has ended! unkown has won!
+[30/01/2014 01:27:32] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | |?| | | |
+| | |?|?| | | |
+| |?|?|?| | | |
+|?|?|?|?| | | |
+---------------
+[30/01/2014 01:27:32] AspectLogger:Game has ended! unkown has won!
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:Game has ended! unkown has won!
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: -1
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 1
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+| | | | | | | |
+| | | | | | | |
+|?| | | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+|?|?| | | | | |
+---------------
+[30/01/2014 01:36:19] AspectLogger:Game has ended! unkown has won!
+[30/01/2014 01:36:19] AspectLogger:after 0 seconds, unkown puts a disc in column: 0
+[30/01/2014 01:36:19] AspectLogger:Board status:
+|?|
+---
+[30/01/2014 01:36:19] AspectLogger:Game has ended in a tie
+[30/01/2014 01:36:19] AspectLogger:invalid move
+[30/01/2014 01:36:19] AspectLogger:invalid move

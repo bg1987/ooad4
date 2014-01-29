@@ -1,6 +1,5 @@
 package ooad4.connectfour;
 import ooad4.core.Board;
-import ooad4.core.InvalidMoveException;
 import ooad4.core.Move;
 import ooad4.core.Piece;
 import ooad4.core.Player;

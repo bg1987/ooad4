@@ -1,4 +1,4 @@
-package ooad4.core;
+package ooad4.logging;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

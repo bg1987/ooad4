@@ -1,7 +1,5 @@
-package ooad4.core;
+package ooad4.logging;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
