@@ -3,21 +3,15 @@ package swingGUI;
 import java.util.Observable;
 import java.util.Observer;
 
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 import ooad4.connectfour.ConnectFourRules;
-import ooad4.connectfour.HumanStrategy;
 import ooad4.connectfour.RandomStrategy;
-import ooad4.consolegui.gameObserver;
 import ooad4.core.Game;
 import ooad4.core.GameEndedUnexpectedlyException;
 import ooad4.core.Piece;
 import ooad4.core.Player;
-import ooad4.core.WinResult;
 
 public class ConnectFourGUI extends JFrame implements Observer {
 	public BoardGUI board;
@@ -45,7 +39,6 @@ public class ConnectFourGUI extends JFrame implements Observer {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Piece piece = (Piece) arg;
@@ -65,7 +58,7 @@ public class ConnectFourGUI extends JFrame implements Observer {
 			Player winner = theGame.play();
 			gui.gameEnded(winner);
 		} catch (GameEndedUnexpectedlyException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 
 	}

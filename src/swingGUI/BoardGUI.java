@@ -3,17 +3,13 @@ package swingGUI;
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.Image;
-import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 
-import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import ooad4.core.Board;
 import ooad4.core.Piece;
 import ooad4.core.Player;
 
@@ -35,8 +31,8 @@ public class BoardGUI extends JPanel{
 			}
 		}
 		
-        playerImages.put(p1, new ImageIcon("C:/Users/Owner/Documents/GitHub/ooad4/src/blue.png"));
-		playerImages.put(p2, new ImageIcon("C:/Users/Owner/Documents/GitHub/ooad4/src/yellow.png"));
+        playerImages.put(p1, new ImageIcon("blue.png"));
+		playerImages.put(p2, new ImageIcon("yellow.png"));
 	}
 	
 	public void setPlayerGUI(Player player, Image newGUI)
