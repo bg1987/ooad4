@@ -9,27 +9,29 @@ import ooad4.core.Player;
 
 public class Main {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		
+	public static void main(String[] args)
+	{
+		//create the players and the game, with a set of rules.
 		Player pHuman = new Player(HumanStrategy.getInstance());
 		Player pRandom = new Player(RandomStrategy.getInstance());
-		Game theGame = new Game(pHuman, pRandom, new ConnectFourRules(5, 5));
-		gameObserver go = new gameObserver(pHuman, '@', pRandom, 'O');
-		theGame.addObserver(go);
-
-
+		Game theGame = new Game(pHuman, pRandom, new ConnectFourRules(6, 7));
+		
+		//initialize consul GUI
+		gameObserver consulGUI = new gameObserver(pHuman, '@', pRandom, 'O', 6, 7);
+		theGame.addObserver(consulGUI);
+		
+		//initialize swing GUI
+		ConnectFourGUI swingGUI = new ConnectFourGUI(pHuman,pRandom, 6, 7);
+		theGame.addObserver(swingGUI);
+		
 		try {
-			theGame.play();
+			//start the game
+			Player winner = theGame.play();
+			
+			swingGUI.gameEnded(winner);
+			consulGUI.gameEnded(winner);
 		} catch (GameEndedUnexpectedlyException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("Done");
-		
 	}
-
-
 }
