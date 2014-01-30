@@ -44,14 +44,17 @@ Then game will notify about changes in the game board, and it is up to the GUI t
 If you have 2 different GUI implementations they can both register as observers of the same Game objects and both will updated.
 This implementation is provided as an example in our main function with one ConsoleGui and one SwingGUI which run simultaneously.
 
-
 2. As explained, when creating a game you pass on two players, to create a player you need to create a class that implements
 the strategy interface and implement whatever heuristic you wish. Then pass it to the game and it will work 
 (we have implemented two strategies as an example, one random and one that takes input from the console).
 
-3.The change of representation is the GUIs responsibility, in our examples, BoardGui has the SetPlayerImage function that will change the image that represents
-as specific player when called. when creating the ConsoleGui class, you one of its parameters are the character icons that represent each player.
-adding these variables to a configurations file is easy and would allow the user to change its appearance without any code.
+3.The change of representation is the GUIs responsibility. In our examples, BoardGui has the SetPlayerImage 
+function that will change the image that represents as specific player when called. When creating the ConsoleGui class,
+one of its parameters are the character icons that represent each player.
+Adding these variables to a configurations file is easy and would allow the user to change its appearance without any 
+code.
+Note also that adding things like a border or a background to the GUI that represents the game is very easy. 
+It does not have anything to do with our code. The GUI designer can do that without even calling the game class.
 
 4.To create a networked version, you would need to implement a new strategy that gets input from the network, and also when you get notifications from Game
 It should be passed to the respective clients.
@@ -69,6 +72,9 @@ the code that is not covered by the unit tests does not have to be - the code in
 which we were told does not have to be tested.
 Our coverage of the code in the Core and ConnectFour packages (the real parts of the ConnectFour game code), 
 have 98.2% and 98.5% coverage respectively.
+
+Dynamic Proxy changes: We added the interface IRules purely for the purpose of implementing a dynamic proxy for the 
+Rules class. It therefore does not appear in the UML diagram.
 
 
 
