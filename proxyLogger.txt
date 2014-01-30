@@ -1,0 +1,74 @@
+[30/01/2014 21:46:08] ProxyLogger: -----ProxyLogger started------
+[30/01/2014 21:46:08] ProxyLogger: getBoardRowsCalled, with args()
+[30/01/2014 21:46:08] ProxyLogger: getBoardRows Ended
+[30/01/2014 21:46:08] ProxyLogger: getBoardColumnsCalled, with args()
+[30/01/2014 21:46:08] ProxyLogger: getBoardColumns Ended
+[30/01/2014 21:46:11] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@1429498,class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:11] ProxyLogger: parseMove Ended
+[30/01/2014 21:46:11] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:11] ProxyLogger: checkWin Ended
+[30/01/2014 21:46:11] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@1dd1ed2,class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:11] ProxyLogger: parseMove Ended
+[30/01/2014 21:46:11] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:11] ProxyLogger: checkWin Ended
+[30/01/2014 21:46:12] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@100200c,class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:12] ProxyLogger: parseMove Ended
+[30/01/2014 21:46:12] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:12] ProxyLogger: checkWin Ended
+[30/01/2014 21:46:12] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@a3ce3f,class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:12] ProxyLogger: parseMove Ended
+[30/01/2014 21:46:12] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:12] ProxyLogger: checkWin Ended
+[30/01/2014 21:46:12] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@74f160,class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:12] ProxyLogger: parseMove Ended
+[30/01/2014 21:46:12] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:12] ProxyLogger: checkWin Ended
+[30/01/2014 21:46:12] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@107c615,class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:12] ProxyLogger: parseMove Ended
+[30/01/2014 21:46:12] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:12] ProxyLogger: checkWin Ended
+[30/01/2014 21:46:13] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@33aa9b,class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:13] ProxyLogger: parseMove Ended
+[30/01/2014 21:46:13] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@299629,)
+[30/01/2014 21:46:13] ProxyLogger: checkWin Ended
+[30/01/2014 21:46:58] ProxyLogger: -----ProxyLogger started------
+[30/01/2014 21:46:58] ProxyLogger: getBoardRowsCalled, with args()
+[30/01/2014 21:46:58] ProxyLogger: getBoardRows Ended
+[30/01/2014 21:46:58] ProxyLogger: getBoardColumnsCalled, with args()
+[30/01/2014 21:46:58] ProxyLogger: getBoardColumns Ended
+[30/01/2014 21:47:01] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@13b8f62,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:01] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:01] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:01] ProxyLogger: checkWin Ended
+[30/01/2014 21:47:01] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@1dd1ed2,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:01] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:01] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:01] ProxyLogger: checkWin Ended
+[30/01/2014 21:47:01] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@9ba134,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:01] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:01] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:01] ProxyLogger: checkWin Ended
+[30/01/2014 21:47:01] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@13803ba,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:01] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:01] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:01] ProxyLogger: checkWin Ended
+[30/01/2014 21:47:02] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@39b99d,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:02] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: checkWin Ended
+[30/01/2014 21:47:02] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@74f160,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:02] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: checkWin Ended
+[30/01/2014 21:47:02] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@107c615,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:02] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: checkWin Ended
+[30/01/2014 21:47:02] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@33aa9b,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:02] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: checkWin Ended
+[30/01/2014 21:47:02] ProxyLogger: parseMoveCalled, with args(class ooad4.connectfour.ConnectFourMove:ooad4.connectfour.ConnectFourMove@779b3e,class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: parseMove Ended
+[30/01/2014 21:47:02] ProxyLogger: checkWinCalled, with args(class ooad4.core.Board:ooad4.core.Board@1429498,)
+[30/01/2014 21:47:02] ProxyLogger: checkWin Ended

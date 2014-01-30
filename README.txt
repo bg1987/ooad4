@@ -49,8 +49,9 @@ This implementation is provided as an example in our main function with one Cons
 the strategy interface and implement whatever heuristic you wish. Then pass it to the game and it will work 
 (we have implemented two strategies as an example, one random and one that takes input from the console).
 
-3.The change of representation is the GUIs responsibility, in our examples, if you change the Files **** the Swing GUI will display
-new images for each player and if you change the ****** (can be easily changed to read from file) the Console GUI will display different Chars for each player.
+3.The change of representation is the GUIs responsibility, in our examples, BoardGui has the SetPlayerImage function that will change the image that represents
+as specific player when called. when creating the ConsoleGui class, you one of its parameters are the character icons that represent each player.
+adding these variables to a configurations file is easy and would allow the user to change its appearance without any code.
 
 4.To create a networked version, you would need to implement a new strategy that gets input from the network, and also when you get notifications from Game
 It should be passed to the respective clients.
