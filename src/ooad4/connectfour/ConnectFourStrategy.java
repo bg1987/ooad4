@@ -3,36 +3,19 @@ import ooad4.core.Strategy;
 
 
 /**
- * An abstract realization of the the Strategy interface that provides the next move in a connect four game.
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
+ * An abstract realization of the the Strategy interface that provides the next move 
+ * in a connect four game.
  */
-
 public abstract class ConnectFourStrategy implements Strategy
 {
 
 	
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * Create a new ConnectFourStrategy.
 	 */
-	
 	public ConnectFourStrategy() {
 		super();
-		// TODO : construct me	
 	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-
 	
 }
 

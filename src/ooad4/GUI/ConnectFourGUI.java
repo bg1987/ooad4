@@ -1,4 +1,4 @@
-package ooad4.consolegui;
+package ooad4.GUI;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -13,6 +13,7 @@ import ooad4.core.Player;
  * Basic GUI created with swing, to show that the game can be 
  * displayed with any GUI written for it, without having to change the code.
  */
+@SuppressWarnings("serial")
 public class ConnectFourGUI extends JFrame implements Observer {
 	public BoardGUI board;
 	private Player p1, p2;
@@ -37,7 +38,10 @@ public class ConnectFourGUI extends JFrame implements Observer {
 	@Override
 	public void update(Observable o, Object arg) {
 		Piece piece = (Piece) arg;
-		board.updateBoard(piece);
+		if (piece != null)
+		{
+			board.updateBoard(piece);
+		}
 		
 	}
 
@@ -50,7 +54,7 @@ public class ConnectFourGUI extends JFrame implements Observer {
 		{
 			JOptionPane.showMessageDialog(null, "Congratulations, player 1 won.");
 		}
-		else
+		else if (winner == p2)
 		{
 			JOptionPane.showMessageDialog(null, "Congratulations, player 2 won.");
 		}

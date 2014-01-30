@@ -1,4 +1,4 @@
-package ooad4.consolegui;
+package ooad4.GUI;
 
 import java.io.*;
 
@@ -11,19 +11,12 @@ import ooad4.core.Player;
 
 /**
  * A ConnectFour that gets its next move from a user.
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
  */
 
 public class HumanStrategy extends ConnectFourStrategy
 {
 	private static HumanStrategy instance;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
+
 	private HumanStrategy(){
 		super();
 	}
@@ -47,7 +40,6 @@ public class HumanStrategy extends ConnectFourStrategy
 
 		System.out.println ("What is your next move? [0-"+(board.getColumns()-1)+"]");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
-		int column =-1;
 		String input = "";
 		do
 		{

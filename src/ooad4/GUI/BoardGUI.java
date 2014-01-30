@@ -1,4 +1,4 @@
-package ooad4.consolegui;
+package ooad4.GUI;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -13,11 +13,12 @@ import javax.swing.JPanel;
 import ooad4.core.Piece;
 import ooad4.core.Player;
 
+@SuppressWarnings("serial")
 public class BoardGUI extends JPanel{
 	
 	private HashMap<Player,ImageIcon> playerImages = new HashMap<Player,ImageIcon>();
 	private JLabel[][] boardDisplay;
-	private int rows, cols;
+	private int rows;
 
 	public BoardGUI(Player p1, Player p2, int rows, int cols)
 	{
@@ -36,19 +37,12 @@ public class BoardGUI extends JPanel{
         playerImages.put(p1, new ImageIcon("blue.png"));
 		playerImages.put(p2, new ImageIcon("yellow.png"));
 		this.rows = rows;
-		this.cols = cols;
 	}
-	
+
+	//This function could be used to change the player icons mid-game to any other image.
 	public void setPlayerGUI(Player player, Image newGUI)
 	{
 		playerImages.get(player).setImage(newGUI);
-		redrawBoard();
-	}
-
-	
-	private void redrawBoard() {
-		// TODO Auto-generated method stub
-		
 	}
 
 	public void updateBoard(Piece piece)

@@ -1,4 +1,4 @@
-package ooad4.consolegui;
+package ooad4.GUI;
 
 import java.util.Random;
 
@@ -11,19 +11,12 @@ import ooad4.core.Player;
 
 /**
  * A ConnectFour strategy that randomly selects a valid column to drop a disc into.
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
  */
 
 public class RandomStrategy extends ConnectFourStrategy
 {
 	private static RandomStrategy instance;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
+
 	private RandomStrategy(){
 		super();
 	}

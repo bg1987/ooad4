@@ -68,7 +68,7 @@ public class ConnectFourRules extends Rules
 	 * Checks that the given input is valid, and extracts the column number if the move is valid
 	 * @param theMove
 	 * @param board
-	 * @return The column number of the move, if it is valid
+	 * @return True if and only if the given move is valid.
 	 */
 	private boolean validateInput(Move theMove, Board board)
 	{
@@ -155,7 +155,6 @@ public class ConnectFourRules extends Rules
 	 */
 	private int countConsecutiveDiscs(Board board, Player owner, int startRow,int startCol, int rowInc,int colInc)
 	{
-		//TODO:Validate stuff
 		int count = 0;
 		
 		int curRow = startRow;

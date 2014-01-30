@@ -3,11 +3,7 @@ package ooad4.core;
 
 /**
  * An abstract class the determines the games logic, such as allowed moves and winning conditions.
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
  */
-
 public abstract class Rules implements IRules
 {
 	protected int boardRows;
@@ -30,9 +26,7 @@ public abstract class Rules implements IRules
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
+	 * Create a new set of rules, given the size of the board that will be played on.
 	 */
 	public Rules(int boardRows, int boardColumns){
 		if (boardRows <= 0 || boardColumns <= 0) {

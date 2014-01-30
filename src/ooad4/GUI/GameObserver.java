@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ooad4.consolegui;
+package ooad4.GUI;
 
 
 import java.util.HashMap;
@@ -13,12 +13,12 @@ import ooad4.core.Game;
 import ooad4.core.Player;
 
 
-public class gameObserver implements Observer {
+public class GameObserver implements Observer {
 
 	Player player1;
 	private HashMap<Player, Character> guiObjects = new  HashMap<Player, Character>();
 	
-	public gameObserver(Player p1, char p1Gui, Player p2, char p2Gui, int rows, int cols) {
+	public GameObserver(Player p1, char p1Gui, Player p2, char p2Gui, int rows, int cols) {
 		guiObjects.put(p1, new Character(p1Gui));
 		guiObjects.put(p2, new Character(p2Gui));
 		this.player1 = p1;

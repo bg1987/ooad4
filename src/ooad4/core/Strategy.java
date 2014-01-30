@@ -3,20 +3,17 @@ package ooad4.core;
 
 
 /**
- * The &quot;Intelligence&quot; of the player.<br>Defines a method that will determine the next move.
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
+ * The "Intelligence" of the player.
+ * Defines a method that will determine the next move.
  */
 public  interface Strategy 
 {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * Decide the next move to be played.
+	 * @param the board to play on
+	 * @param the player the needs to make a move
+	 * @return the move chosen to be played.
 	 */
-	
 	public Move nextMove(Board board, Player player) ;
 	
 	

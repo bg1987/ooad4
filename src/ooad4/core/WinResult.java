@@ -1,9 +1,7 @@
 package ooad4.core;
 
 /**
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
+ * Enum representing the possible winning states of a game.
  */
 public enum WinResult
 {

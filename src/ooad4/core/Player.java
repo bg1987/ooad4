@@ -3,44 +3,28 @@ package ooad4.core;
 
 /**
  * Represents a player in the game, either human or an AI.
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
  */
-
 public class Player
-{
+{	
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * The strategy used by this player.
 	 */
-	
-	public String color;
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
 	public Strategy strategy;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * Create a new player that uses the given strategy to choose their moves.
 	 */
-	
 	public Player(Strategy strategy) {
 		this.strategy = strategy; 
 	}
 
 
+	/**
+	 * Decide what move to play next.
+	 * @param the board on which to play the next move.
+	 * @return The next move that the player would like to play.
+	 */
 	public Move getMove(Board board) {
 		return strategy.nextMove(board, this);
 	}

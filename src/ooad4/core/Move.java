@@ -3,30 +3,18 @@ package ooad4.core;
 
 /**
  * An abstract class representing a move in the game.
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
- * @generated
  */
-
 public abstract class Move
 {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * The player that played this move.
 	 */
-	
 	public Player owner;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
+	 * Create a new move object.
 	 */
-	
 	public Move(Player owner) {
 		if (owner == null)
 		{

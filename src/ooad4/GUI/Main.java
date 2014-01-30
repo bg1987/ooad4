@@ -1,4 +1,4 @@
-package ooad4.consolegui;
+package ooad4.GUI;
 
 import ooad4.connectfour.ConnectFourRules;
 import ooad4.core.Game;
@@ -20,7 +20,7 @@ public class Main {
 		Game theGame = new Game(pHuman, pRandom,rules );
 		
 		//initialize consul GUI
-		gameObserver consulGUI = new gameObserver(pHuman, '@', pRandom, 'O', 6, 7);
+		GameObserver consulGUI = new GameObserver(pHuman, '@', pRandom, 'O', 6, 7);
 		theGame.addObserver(consulGUI);
 		
 		//initialize swing GUI
