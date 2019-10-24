@@ -1,6 +1,6 @@
 OOAD4 Project README
-bg1987 306224403
-naamabd 307944306
+bg1987 
+naamabd 
 
 ----------------------------
 
